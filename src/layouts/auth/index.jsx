@@ -11,11 +11,11 @@ export default (Element) => () => {
     const nav = useNavigate()
 
     // store
-    const { auth } = useMyStore()
+    const { auth } = useMyStore();
 
     // effects
     React.useEffect(() => {
-        if (!auth.load && auth.user) nav('/', { replace: true });
+        if (!auth.load && auth.user?.first_name) nav('/', { replace: true });
     }, [auth.load, auth.user])
 
     return <>
