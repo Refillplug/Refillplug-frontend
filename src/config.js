@@ -1,143 +1,131 @@
 export { default as logo } from "./assets/icons/logo.png";
-export { default as eye } from "./assets/icons/eye_visible.png";
 
 export const signupConfig = {
-	header: "Log in or Create Account",
-	subHeader:
-		"Enter the email address you use to sign in to Pharmaco. We'll send you a link to reset it",
-	inputs: [
-		{
-			name: firstname,
-			title: "First Name",
-			label: firstname,
-			placeholder: "Enter Your First Name",
-		},
+    header: "Log in or Create Account",
+    subHeader:
+        "Enter the email address you use to sign in to Pharmaco. We'll send you a link to reset it",
+    inputs: [
         {
-			name: lastname,
-			title: "Last Name",
-			label: lastname,
-			placeholder: "Enter Your Last Name",
-		},
+            required: true,
+            name: 'firstname',
+            title: "First Name",
+            label: 'firs tname',
+            placeholder: "Enter Your First Name",
+        },
         {
-			name: username,
-			title: "Username",
-			label: username,
-			placeholder: "username",
-		},
+            required: true,
+            name: 'lastname',
+            title: "Last Name",
+            label: 'last name',
+            placeholder: "Enter Your Last Name",
+        },
         {
-            name: email,
+            required: true,
+            name: 'username',
+            title: "Username",
+            label: 'username',
+            placeholder: "username",
+        },
+        {
+            name: 'email',
+            required: true,
+            type: "email",
             title: "Email",
             label: "email",
             placeholder: "Enter email address",
-            type: "email",
         },
         {
-            name: phone,
-            title: "Phone Number",
-            label: "phone",
-            placeholder: "Enter your phone no",
+            required: true,
+            name: 'phone',
             type: "phone",
+            title: "phone",
+            label: "Phone Number",
+            placeholder: "Enter your phone no",
         },
         {
-            name: password,
+            required: true,
+            name: 'password',
+            type: "password",
             title: "Password",
             label: "password",
             placeholder: "Enter your password",
-            type: "password",
         },
         {
-            name: password2,
-            title: "Confirm Password",
-            label: "password",
-            placeholder: "Re-enter your password",
+            required: true,
             type: "password",
+            name: 'password2',
+            label: "Confirm Password",
+            title: "repeat-password",
+            placeholder: "Confirm your password",
         },
-	],
-	links: {
-		to: "/login",
-		text: "Log in",
-	},
-	button: {
-		type: "submit",
-		text: "Sign up",
-	},
+    ],
+    links: [{ to: "/login", text: "Already on Refillplug? *Log in*", }],
+    buttons: [{ type: "submit", text: "Sign up", }],
 };
 
 export const loginConfig = {
-	header: "Log in or Create Account",
-	inputs: [
+    header: "Log in or Create Account",
+    inputs: [
         {
-            name: email,
-            title: "Email",
+            type: "email",
+            name: 'email',
+            required: true,
+            title: "email",
             label: "email",
             placeholder: "Enter email address",
-            type: "email",
         },
         {
-            name: password,
+            required: true,
+            type: "password",
+            name: 'password',
             title: "password",
             label: "password",
             placeholder: "Enter your password",
-            type: "password",
+            link: { to: '/', text: 'forgot password?' },
         },
     ],
-	links: {
-        to: "/register",
-		text: "",
-	},
-	button: {
-		type: "submit",
-		text: "Login",
-	},
+    links: [{ text: "New to Refillplug? *sign up*", to: "/register", }],
+    buttons: [{ type: "submit", text: "Login" },],
 };
 
-
 export const forgotPasswordConfig = {
-	header: "Forgot Password",
-    subHeader: "Enter the email address you use to sign in to Refillplug. We'll send you a link to reset it",
-	inputs: [
+    header: "Forgot Password",
+    subject: "Enter the email address you use to sign in to Refillplug. We'll send you a link to reset it",
+    inputs: [
         {
-            name: email,
+            name: 'email',
+            type: "email",
             title: "Email",
             label: "email",
+            required: true,
             placeholder: "Enter email address",
-            type: "email",
         },
     ],
-	links: {
-        to: "/login",
-		text: "",
-	},
-	button: {
-		type: "submit",
-		text: "Reset Password",
-	},
+    links: [{ to: "/login", text: "Back to *login*", }],
+    buttons: [{ type: "submit", text: "Reset Password", }],
 };
 
 export const ReActivateConfig = {
-	header: "Re Activate Account",
-	inputs: [
+    header: "Re Activate Account",
+    subject: "Enter the email address you use to sign in to Refillplug. We'll send you a link to reset it",
+    inputs: [
         {
-            name: password,
+            required: true,
+            type: "password",
+            name: 'password',
             title: "Password",
             label: "password",
             placeholder: "Enter your password",
-            type: "password",
         },
         {
-            name: password2,
-            title: "Confirm Password",
-            label: "password",
-            placeholder: "Re-enter your password",
+            required: true,
             type: "password",
+            name: 'password2',
+            label: "password",
+            title: "Confirm Password",
+            placeholder: "Re-enter your password",
         },
     ],
-	links: {
-        to: "/login",
-		text: "",
-	},
-	button: {
-		type: "submit",
-		text: "Reset Password",
-	},
+    links: [{ to: "/login", text: "Back to *login*", }],
+    buttons: [{ type: "submit", text: "Activate", }],
 };

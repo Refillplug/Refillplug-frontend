@@ -1,2 +1,120 @@
 header
+    top: 0
+    gap: 2em
     width: 100%
+    height: 5em
+    display: flex
+    z-index: 1000
+    padding: 0 6%
+    position: sticky
+    align-items: center
+    background: var(--white)
+    border-bottom: .2em solid var(--blue)
+
+    @media screen and (width <= 50em)
+        font-size: .7em
+
+    .btn
+        gap: .4em
+        width: 2.5em
+        display: none
+        cursor: pointer
+        position: relative
+        align-items: center
+        flex-direction: column
+        justify-content: center
+
+        i
+            flex: none
+            width: 2.4em
+            height: 0.2em
+            transition: 200ms
+            border-radius: .5em
+            background: rgba(0 0 0 / .4)
+
+        &.open
+            i
+                width: 2em
+                height: .3em
+                background: #000
+                position: absolute
+                transform: rotate(45deg)
+
+                &:last-child
+                    transform: rotate(-45deg)
+                    
+
+        @media screen and (width <= 50em)
+            display: flex
+
+    #logo
+        height: 2em
+        font-size: 1rem
+
+        img
+            width: 100%
+            height: 100%
+            object-fit: contain
+
+    nav
+        gap: 2em
+        display: flex
+        align-items: center
+        justify-content: center
+
+        a
+            font-size: 1.3em
+            text-transform: capitalize
+
+        &.main
+            flex: 1 auto
+
+            @media screen and (width <= 50em)
+                left: 0
+                top: 100%
+                height: 0
+                width: 100%
+                padding: 0 3em
+                font-size: 1.6em
+                overflow: hidden
+                transition: 200ms
+                position: absolute
+                background: #000
+                color: var(--white)
+                flex-direction: column
+                align-items: flex-start
+                justify-content: flex-start
+
+                &.open
+                    padding: 3em
+                    height: calc(100vh - 0em)
+
+        &.aside
+            margin-left: auto
+            a.icon
+                padding: .5em
+                font-size: 1em
+                border-radius: 50%
+                position: relative
+                color: var(--white)
+                transition: 300ms ease
+                background: var(--blue)
+
+                &:hover
+                    filter: brightness(1.1)
+
+                b
+                    left: 80%
+                    width: 1em
+                    height: 1em
+                    bottom: 80%
+                    display: flex
+                    padding: .7em
+                    font-size: .7em
+                    aspect-ratio: 1
+                    background: red
+                    font-weight: 900
+                    align-items: center
+                    position: absolute
+                    justify-content: center
+                    border-radius: inherit

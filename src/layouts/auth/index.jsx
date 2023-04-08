@@ -5,9 +5,10 @@ import { useMyStore } from '../../store'
 // components
 import Header from '../../components/header'
 import { useNavigate } from 'react-router-dom'
+import * as forms from '../../components/forms'
 
 export default (Element) => () => {
-    // location hook
+    // hooks
     const nav = useNavigate()
 
     // store
@@ -15,11 +16,10 @@ export default (Element) => () => {
 
     // effects
     React.useEffect(() => {
-        if (!auth.load && auth.user) nav('/', { replace: true });
+        if (!auth.load && 'username' in auth.user) nav('/', { replace: true });
     }, [auth.load, auth.user])
 
-    return <>
-        <Header />
-        <Element />
-    </>
+    return <section id="auth">
+        <Element form={forms.form} />
+    </section>
 } 
