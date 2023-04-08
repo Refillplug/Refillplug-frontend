@@ -4,10 +4,10 @@ import * as layouts from '../layouts';
 // pages
 const pages = ({
     home: React.lazy(() => import('../pages')),
-    login: React.lazy(() => import('../pages/authPages/login')),
-    signup: React.lazy(() => import('../pages/authPages/signup')),
-    forgotPassword: React.lazy(() => import('../pages/authPages/forgotPassword')),
-    reActivateUser: React.lazy(() => import('../pages/authPages/reActivateUser')),
+    login: React.lazy(() => import('../pages/auth/login')),
+    signup: React.lazy(() => import('../pages/auth/signup')),
+    forgotPassword: React.lazy(() => import('../pages/auth/forgot')),
+    reActivateUser: React.lazy(() => import('../pages/auth/activate')),
 
 });
 

@@ -4,7 +4,7 @@ import { api } from '../../utils';
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 // async api calls
-export const login = createAsyncThunk('auth.slice', async data => await api.post('login/', data));
+export const login = createAsyncThunk('auth.slice/login', async data => await api.post('login/', data));
 
 const auth = createSlice({
     name: 'auth', // a unique name for identifying the reducer in the root reducer

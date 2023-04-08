@@ -1,9 +1,10 @@
 import * as auth from './slice/auth.slice';
+import * as cart from './slice/cart.slice';
 import { configureStore } from '@reduxjs/toolkit';
 import { useDispatch, useSelector } from 'react-redux';
 
 
-const store = configureStore({ reducer: { auth: auth.default } });
+const store = configureStore({ reducer: { auth: auth.default,cart:cart.default } });
 
 export default store;
 
@@ -29,5 +30,6 @@ export const useMyDispatch = () => {
 export const useMyStore = () => {
     return ({
         auth: useSelector(state => state.auth),
+        cart: useSelector(state => state.cart),
     })
 };
