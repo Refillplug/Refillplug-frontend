@@ -1,7 +1,9 @@
 export { default as logo } from "./assets/icons/logo.png";
+export { default as copy } from "./assets/icons/copy.svg";
+export { default as banner } from './assets/image/banner.svg';
 
 export const signupConfig = {
-    header: "Log in or Create Account",
+    header: "Sign Up",
     subHeader:
         "Enter the email address you use to sign in to Pharmaco. We'll send you a link to reset it",
     inputs: [
@@ -110,22 +112,30 @@ export const ReActivateConfig = {
     subject: "Enter the email address you use to sign in to Refillplug. We'll send you a link to reset it",
     inputs: [
         {
+            type: "email",
+            name: 'email',
+            label: "email",
             required: true,
-            type: "password",
-            name: 'password',
-            title: "Password",
-            label: "password",
-            placeholder: "Enter your password",
+            title: "Enter email",
+            placeholder: "Enter your email",
         },
         {
             required: true,
-            type: "password",
-            name: 'password2',
-            label: "password",
-            title: "Confirm Password",
-            placeholder: "Re-enter your password",
+            name: 'code',
+            label: "code",
+            type: "number",
+            title: "otp code",
+            placeholder: "Enter the otp code",
         },
     ],
     links: [{ to: "/login", text: "Back to *login*", }],
     buttons: [{ type: "submit", text: "Activate", }],
 };
+
+
+export const portfolio = [
+    { title: "Customer's Satisfaction", data: "95%" },
+    { title: "Online Customer", data: "500+" },
+    { title: "Saved on Medication", data: "20%" },
+    { title: "Saved Monthly", data: "5Hrs" },
+]

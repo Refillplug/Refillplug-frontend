@@ -38,7 +38,7 @@ export default () => {
                 <HiOutlineShoppingCart />
                 {cart.data.length ? <b>{cart.data.length}</b> : null}
             </Link>
-            <Link to='/'>sign up</Link>
+            <Link to='/register'>sign up</Link>
         </nav>
     </header>
 }; 

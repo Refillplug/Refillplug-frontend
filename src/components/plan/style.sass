@@ -1,0 +1,29 @@
+section#plan
+
+    .content
+        overflow: auto
+        align-items: center
+        justify-content: flex-start
+        scroll-snap-type: x mandatory
+
+        // &::-webkit-scrollbar
+            // width: 0
+            // height: 0
+
+    .btn
+        width: 100%
+        display: flex
+        padding: 2rem
+        justify-content: center
+
+        a
+            font-weight: 900
+            padding: .4em 2em
+            color: var(--white)
+            border-radius: .4em
+            transition: 300ms ease
+            background: var(--blue)
+            text-transform: capitalize
+
+            &:hover
+                filter: brightness(1.2)

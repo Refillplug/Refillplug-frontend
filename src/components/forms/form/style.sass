@@ -6,8 +6,13 @@ form
     border-radius: .2em
     flex-direction: column
     background: var(--white)
-    width: clamp(22em, 55vw, 80em)
+    width: clamp(24em, 55vw, 80em)
     box-shadow: .2em .2em .6em rgba(0 0 0 / .1)
+
+    @media screen and (width <= 50rem)
+        width: 100%
+        padding: 0
+        box-shadow: none
 
     &>*
         width: 100%

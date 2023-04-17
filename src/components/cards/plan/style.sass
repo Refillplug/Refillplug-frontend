@@ -1,0 +1,32 @@
+.plan
+    gap: 1em
+    padding: 2em
+    display: flex
+    flex: 0 0 22em
+    scroll-margin: 2em
+    border-radius: .6em
+    flex-direction: column
+    justify-content: center
+    scroll-snap-align: start
+    box-shadow: .2em .2em 1em rgba(0 0 0 / .2)
+
+    @media screen and (width<=50rem)
+        scroll-snap-align: center
+
+    h3
+        text-transform: capitalize
+        font-size: clamp(1.6em, 1.8vw, 3em)
+
+    .info
+        display: flex
+        font-size: 1.1em
+        font-weight: 900
+        text-transform: capitalize
+        justify-content: space-between
+
+        span
+            &:first-child
+                color: var(--blue)
+
+            &:last-child
+                color: var(--orange)
