@@ -28,7 +28,7 @@ export default function (props) {
         </div>
         <div className="links">
             {
-                props?.links?.map((link, key) => link.text.includes('*') ? <span>
+                props?.links?.map((link, key) => link.text.includes('*') ? <span key={key}>
                     {link.text.slice(0, link.text.indexOf('*'))}
                     <Link to={link.to}>{link.text.slice(link.text.indexOf('*') + 1, link.text.lastIndexOf('*'))}</Link>
                     {link.text.slice(1 + link.text.lastIndexOf('*'))}

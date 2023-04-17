@@ -7,6 +7,7 @@
     --blue: #4BA6ED
     --black: #000000
     --white: #ffffff
+    --orange: #FF9900
 
 * // general styling, reseting margin and padding
     margin: 0
@@ -18,6 +19,7 @@ body // setting the body'swith and some other properties
     width: 100%
     height: 100vh
     // overflow: auto
+
     & :is(#root, #portal) // setting the root and portal elements
         width: 100%
         height: 100vh
@@ -27,10 +29,39 @@ body // setting the body'swith and some other properties
         justify-content: center
 
     #root
-        overflow: hidden
+        gap: 1em
+        overflow: auto
         align-items: initial
         flex-direction: column
         justify-content: flex-start
+
+        header, footer, section
+            flex: none
+
+        section
+            width: 100%
+
+            &.column-flex
+                gap: 1em
+                display: flex
+                flex-direction: column
+
+                .title
+                    width: 100%
+                    display: flex
+                    align-items: center
+                    justify-content: center
+
+                    h2
+                        text-transform: capitalize
+                        font-size: clamp(2em, 3vw, 4em)
+
+                .content
+                    gap: 3em
+                    padding: 2em
+                    display: flex
+                    overflow: auto
+                    // background: #000
 
     #portal
         top: 0
