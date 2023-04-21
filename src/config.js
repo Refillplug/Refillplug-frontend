@@ -1,6 +1,7 @@
 export { default as logo } from "./assets/icons/logo.png";
 export { default as copy } from "./assets/icons/copy.svg";
 export { default as banner } from './assets/image/banner.svg';
+export { default as subscribe } from './assets/image/subscribe.svg';
 
 export const signupConfig = {
     header: "Sign Up",
@@ -132,10 +133,36 @@ export const ReActivateConfig = {
     buttons: [{ type: "submit", text: "Activate", }],
 };
 
+export const subscribeConfig = {
+    inputs: [
+        {
+            type: "text",
+            required: true,
+            name: 'first_name',
+            title: "First Name",
+            placeholder: "First Name",
+        },
+        {
+            type: "text",
+            required: true,
+            name: 'last_name',
+            title: "Last Name",
+            placeholder: "Last Name",
+        },
+        {
+            type: "email",
+            name: 'email',
+            required: true,
+            title: "Enter your Email Address",
+            placeholder: "Enter your Email Address",
+        },
+    ],
+    buttons: [{ type: "submit", text: "Subscribe", }],
+};
 
 export const portfolio = [
     { title: "Customer's Satisfaction", data: "95%" },
     { title: "Online Customer", data: "500+" },
     { title: "Saved on Medication", data: "20%" },
     { title: "Saved Monthly", data: "5Hrs" },
-]
+];
