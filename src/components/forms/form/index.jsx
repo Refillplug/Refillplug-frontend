@@ -15,9 +15,9 @@ export default function (props) {
         console.error('onSubmit method is not implemented');
     }
 
-    return <form action="" method="post" onSubmit={handleSubmit}>
+    return <form action="" method="post" onSubmit={handleSubmit} style={props?.style?.form}>
         <div className="title">
-            <h2>{props?.header || 'header'}</h2>
+            <h2>{props?.header}</h2>
             {props?.subject ? <span>{props.subject}</span> : null}
         </div>
         <div className="input-groups">
