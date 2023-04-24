@@ -10,9 +10,9 @@ export const signupConfig = {
     inputs: [
         {
             required: true,
-            name: 'firstname',
+            name: 'first_name',
             title: "First Name",
-            label: 'firs tname',
+            label: 'first name',
             placeholder: "Enter Your First Name",
         },
         {
@@ -39,9 +39,9 @@ export const signupConfig = {
         },
         {
             required: true,
-            name: 'phone',
             type: "phone",
             title: "phone",
+            name: 'phone_number',
             label: "Phone Number",
             placeholder: "Enter your phone no",
         },
