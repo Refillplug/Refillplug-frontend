@@ -1,10 +1,17 @@
 import React from "react";
 
 import { loginConfig } from '../../../config'
+import { useMyDispatch, useMyStore } from '../../../store'
 
 export default (props) => {
-  // methods
-  const handleSubmit = (data) => { console.log(data) };
+  // custom store hook
+  const [{ auth }, { login }] = [useMyStore(), useMyDispatch()];
 
-  return <props.form {...loginConfig} onSubmit={handleSubmit} />
+  // methods
+  const handleSubmit = (data) => {
+    console.log(data);
+    login(data);
+  };
+
+  return <props.form {...loginConfig} onSubmit={handleSubmit} loading={auth.load} />
 }; 

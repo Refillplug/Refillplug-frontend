@@ -4,7 +4,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import { useDispatch, useSelector } from 'react-redux';
 
 
-const store = configureStore({ reducer: { auth: auth.default,cart:cart.default } });
+const store = configureStore({ reducer: { auth: auth.default, cart: cart.default } });
 
 export default store;
 
@@ -19,6 +19,7 @@ export const useMyDispatch = () => {
 
     return ({
         login: data => dispatch(auth.login(data)),
+        register: data => dispatch(auth.register(data)),
     })
 }
 

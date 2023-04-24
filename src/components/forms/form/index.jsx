@@ -24,7 +24,7 @@ export default function (props) {
             {props?.inputs?.map((item, key) => <Group {...item} key={item?.name || key} onChange={handleData} />)}
         </div>
         <div className="buttons">
-            {props?.buttons?.map((btn, key) => <button key={key} type={btn.type}>{btn.text}</button>)}
+            {props?.buttons?.map((btn, key) => <button key={key} type={btn.type} disabled={props?.loading}>{btn.text}</button>)}
         </div>
         <div className="links">
             {
