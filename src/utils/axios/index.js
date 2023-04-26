@@ -2,7 +2,7 @@ import axios, { } from 'axios';
 
 class Axios {
     constructor() {
-        this.http = axios.create({ baseURL: 'https://refillplug.up.railway.app/auth' });
+        this.http = axios.create({ baseURL: 'https://refillplug.up.railway.app' });
     }
 
     async get(url, config) {
