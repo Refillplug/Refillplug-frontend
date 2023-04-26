@@ -14,9 +14,9 @@ export default function () {
         setState(prev => ({ ...prev, load: true }));
         try {
             let res = await api.post('newsletter/subscribe/', data);
-            console.log(res?.subscribed);
+            console.log(res);
             setState(prev => ({ load: false, error: null }));
-        } catch (error) { setState(prev => ({ load: false, error })) }
+        } catch (error) { setState(prev => ({ load: false, error })); console.error(error) }
     };
 
     return <section id="subscribe" className="column-flex">
