@@ -20,7 +20,7 @@ export default function (props) {
             <h2>{props?.header}</h2>
             {props?.subject ? <span>{props.subject}</span> : null}
         </div>
-        <div className="input-groups">
+        <div className="groups">
             {props?.inputs?.map((item, key) => <Group {...item} key={item?.name || key} onChange={handleData} />)}
         </div>
         <div className="buttons">
