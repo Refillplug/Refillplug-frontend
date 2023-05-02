@@ -6,6 +6,12 @@ import customer1 from './assets/image/customer/1.svg'
 import customer2 from './assets/image/customer/2.svg'
 import customer3 from './assets/image/customer/3.svg'
 
+export const plan = [
+    { title: 'Basic Plan', validility: '1-Month', price: '15,000', description: 'Ideal for individuals who require a simple refill service. Subscribers can request up to 6 medications, twice a month.' },
+    { title: 'Premium Plan', validility: '1-Month', price: '40,000', description: 'Ideal for individuals who require a more advanced refill service. Subscribers can request up to 6 medications, twice a month.' },
+    { title: 'Executive Plan', validility: '1-Month', price: '100,000', description: 'Ideal for individuals who require the most advanced refill service. Subscribers can request up to 10 medications, twice a month.' },
+]
+
 export const started = [
     { image: user, title: 'Sign Up, Activate and Update your Profile' },
     { image: delivery, title: 'Make Payment and get it delivered to your place' },
