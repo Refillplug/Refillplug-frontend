@@ -12,6 +12,68 @@ footer
         padding: var(--p)
         border-top: .1em solid var(--white)
 
+    .top
+        gap: 4em
+        align-items: center
+        justify-content: space-around
+        .flex
+            gap: 1em
+            display: flex
+            align-items: center
+            justify-content: flex-start
+
+            img
+                height: 2em
+                object-fit: contain
+
+            span
+                font-weight: 700
+                color: var(--white)
+
+    .middle
+        flex-wrap: wrap
+        padding-bottom: 4em
+
+        .flex
+            gap: 1em
+            display: flex
+            flex: 1 0 10em
+            flex-direction: column
+
+            &:first-child
+                flex-grow: 3
+                justify-content: center
+
+                img
+                    height: 2.6em
+                    margin-right: auto
+            
+            &:nth-child(2)
+                flex-grow: 2
+
+            h3
+                font-size: 1.4em
+                font-weight: 700
+                color: var(--white)
+                text-transform: capitalize
+
+            p
+                width: 80%
+                font-weight: 900
+
+            .links
+                gap: .5em
+                flex: 1 auto
+                display: flex
+                font-weight: 600
+                flex-direction: column
+                text-transform: capitalize
+
+                a
+                    font-size: .8em
+                    color: var(--white)
+                    text-decoration: none
+
     .bottom
         font-weight: 500
         justify-content: space-between
@@ -27,5 +89,5 @@ footer
                 height: 1.5em
 
         .links
-            gap: 1em
+            gap: 2em
             display: flex

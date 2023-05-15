@@ -1,6 +1,12 @@
 export { default as logo } from "./assets/icons/logo.png";
+export { default as mail } from "./assets/icons/mail.svg";
 export { default as copy } from "./assets/icons/copy.svg";
+export { default as logo2 } from "./assets/icons/logo2.svg";
+export { default as phone } from "./assets/icons/phone.svg";
 export { default as banner } from './assets/image/banner.svg';
+export { default as twitter } from "./assets/icons/twitter.svg";
+export { default as facebook } from "./assets/icons/facebook.svg";
+export { default as instagram } from "./assets/icons/instagram.svg";
 export { default as subscribe } from './assets/image/subscribe.svg';
 
 export const signupConfig = {
