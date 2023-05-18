@@ -25,9 +25,9 @@ export default () => {
         <Link to='/' id='logo'><img src={logo} alt="" /></Link>
         <nav className={`main ${open ? 'open' : ''}`}>
             <Link to='/'>home</Link>
-            <Link to='/'>plan</Link>
-            <Link to='/'>services</Link>
-            <Link to='/'>product</Link>
+            <Link to='/plan'>plan</Link>
+            <Link to='/service'>services</Link>
+            <Link to='/product'>product</Link>
         </nav>
         <nav className="aside">
             <Link to='/' className='icon'>

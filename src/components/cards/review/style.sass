@@ -1,0 +1,51 @@
+.review-card
+    gap: 1em
+    display: flex
+    flex: 0 0 20em
+    padding: 0 1em 2em
+    align-items: center
+    scroll-margin: 3em
+    flex-direction: column
+    scroll-snap-align: start
+    justify-content: flex-start
+    border: .1em solid rgba(0 0 0 / .4)
+
+    .image
+        width: 50%
+        aspect-ratio: 1
+        position: relative
+        border-radius: 50%
+        margin-bottom: -30%
+        transform: translateY(-50%)
+        background: rgba(0 0 0 / .1)
+
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            position: absolute
+            border-radius: inherit
+
+    .heading
+        width: 100%
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+
+        h3
+            text-transform: capitalize
+
+        .ratings
+            flex: 1 auto
+            display: flex
+            justify-content: flex-end
+
+            svg
+                height: 1em
+                fill: rgba(0 0 0 / .2)
+
+                &.rated
+                    fill: yellow
+
+    p
+        text-align: center

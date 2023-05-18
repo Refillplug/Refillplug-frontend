@@ -1,0 +1,36 @@
+.started
+    gap: 2em
+    padding: 2em
+    display: flex
+    flex: 0 0 22em
+    position: relative
+    scroll-margin: 1em
+    border-radius: 1em
+    align-items: center
+    background: #BCFDCF
+    flex-direction: column
+    justify-content: center
+    scroll-snap-align: start
+    box-shadow: .2em .2em 1em rgba(0 0 0 / .2)
+
+    &:nth-child(3n+2)
+        background: #F9D5F9
+
+    &:nth-child(3n+3)
+        background: #BDBDFA
+
+
+    span.num
+        left: 0
+        font-size: 2em
+        font-weight: 900
+        position: absolute
+        bottom: calc(100% + 1em)
+
+    img
+        width: 50%
+        object-fit: contain
+
+    h3
+        width: 80%
+        text-align: center

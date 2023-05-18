@@ -7,6 +7,9 @@ export default (props) => {
   // custom store hook
   const [{ auth }, { register }] = [useMyStore(), useMyDispatch()];
 
+  // effects
+  React.useEffect(() => {},[auth.error])
+
   // methods
   const handleSubmit = (data) => {
     console.log(data);
