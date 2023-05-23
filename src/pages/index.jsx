@@ -7,6 +7,7 @@ import $review from "../components/review";
 import $started from '../components/started';
 import $portfolio from "../components/portfolio";
 import $subscribe from "../components/subscribe";
+import BmiSection from '../components/bmi-section'
 
 export default () => {
     return <>
@@ -16,5 +17,6 @@ export default () => {
         <$started />
         <$review />
         <$subscribe />
+        <BmiSection/>
     </>
 }; 
