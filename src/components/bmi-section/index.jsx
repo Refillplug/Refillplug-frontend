@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useState } from 'react';
 import './style.scss'
 import doctorImage from '../../assets/image/doctor.jpg';
-import PopUp from './PopUp';
+
 
 
 function BmiSection() {
@@ -21,7 +21,7 @@ function BmiSection() {
       console.log(
         BMIResault
       );
-        setIspopup(true)
+        setIspopup(!ispopup)
 
   }
  
@@ -29,23 +29,26 @@ function BmiSection() {
  
   
   return (
-    <section
-      style={{
-        display: "flex",
-        gap: "2rem",
-        padding: "2rem",
-        position: "relative",
-      }}
-    >
-      {/* {ispopup || (
-        <div className="bmi-popup">
-          <div className="close" onClick={() => setIspopup(false)}>
-            x
+    <section className="flex gap-[2rem] p-2 ">
+      {ispopup || (
+        <>
+          <div className="modal max-w-xl max-h-sm">
+            <button
+              className="close-modal "
+              onClick={() => setIspopup(!ispopup)}
+            >
+              &times;
+            </button>
+            <h1 className="text-center">
+              BMI Resualt: {Math.round(BMIResault)} kg/m
+              <sup>2</sup> 
+            </h1>
           </div>
-          PopUp in
-          <h1>{BMIResault}</h1>
-        </div>
-      )} */}
+          <div className="overlay" onClick={() => setIspopup(!ispopup)}></div>
+        </>
+      )}
+
+      
       <div className="image">
         <img src={doctorImage} alt="" />
       </div>
