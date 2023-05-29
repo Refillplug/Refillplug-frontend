@@ -7,16 +7,21 @@ import $review from "../components/review";
 import $started from '../components/started';
 import $portfolio from "../components/portfolio";
 import $subscribe from "../components/subscribe";
-import BmiSection from '../components/bmi-section'
+import BmiSection from '../components/bmi-section';
+import $deliverySection from '../components/deliverySection'
+import SectionMedication from "../components/sectionMedication/SectionMedication";
 
 export default () => {
     return <>
         <$banner />
         <$plan />
         <$portfolio />
-        <$started />
+        <$started /> 
+        <BmiSection/>
+        <$deliverySection/>
+        <SectionMedication/>
         <$review />
         <$subscribe />
-        <BmiSection/>
+       
     </>
 }; 

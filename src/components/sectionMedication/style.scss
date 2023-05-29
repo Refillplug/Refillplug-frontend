@@ -1,0 +1,66 @@
+.medication{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    width: 100%;
+    padding: 3rem;
+    .medication-cont{
+        display: grid;
+            max-width:50rem;
+            width: 100%;
+            .section-slider{
+                .slider{
+                    overflow: auto;
+                    align-items: center;
+                    padding-top: 5em !important;
+                    justify-content: flex-start;
+                    scroll-snap-type: x mandatory;
+                }
+
+                .slider{
+                    &-01{
+                        ul{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1rem;
+                            
+                            li{
+                                border-bottom: solid .1rem #0003;
+                                padding: .4rem;
+                                text-align: center;
+                            }
+                        }
+                        
+                    }
+                    &-02{
+                        
+                    }
+
+                }
+            }
+    }
+    .input-cont{
+        width: 100%;
+        border: solid .1rem #0003;
+        display: grid;
+        place-items: center;
+        margin: auto;
+        border-radius: .5rem;
+        overflow: hidden;
+     
+
+        input{
+            width: 100%;
+            padding: .5rem;
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+   
+    .slider-btn-cont{
+        display: flex; 
+        width: 100%;
+        gap: 2rem;
+    }
+}
