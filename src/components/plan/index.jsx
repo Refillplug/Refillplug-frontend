@@ -13,6 +13,4 @@ export default function () {
         <div className="content">
             {plan.map((items, key) => <$plan key={key} {...items} />)}
         </div>
-        <div className="btn"><Link to='/'>read more</Link></div>
-    </section>
-} 
+        </section>}
