@@ -2,50 +2,55 @@ import React, { useEffect } from 'react'
 import { useState } from 'react';
 import './style.scss'
 import doctorImage from '../../assets/image/doctor.jpg';
-import PopUp from './PopUp';
+
 
 
 function BmiSection() {
-  // const [displayResalt]
   
   const [height, setHeight] = useState(0);
   const [mass, setMass] = useState(0);
-  const [BMIResault,setBMIResault] = useState(0);
+  const [BMIResalt,setBMIResalt] = useState(0);
   const [ispopup, setIspopup] = useState(false);
-
 
 
   function handleBMI(e){
     e.preventDefault();
-    setBMIResault( mass / ((height / 100) * (height / 100)));
-      console.log(
-        BMIResault
-      );
-        setIspopup(true)
-
+    if (height && mass){
+      setBMIResalt( mass / ((height / 100) * (height / 100)));
+ 
+      setIspopup(!ispopup)
+    }else{
+      setBMIResalt(0)
+    }
   }
  
 
  
   
   return (
-    <section
-      style={{
-        display: "flex",
-        gap: "2rem",
-        padding: "2rem",
-        position: "relative",
-      }}
-    >
-      {/* {ispopup || (
-        <div className="bmi-popup">
-          <div className="close" onClick={() => setIspopup(false)}>
-            x
-          </div>
-          PopUp in
-          <h1>{BMIResault}</h1>
-        </div>
-      )} */}
+    <section className="flex gap-[2rem] p-2 ">
+      {ispopup && BMIResalt ? ( <>
+            <div className="modal max-w-xl max-h-sm  " id="popup">
+              <button
+                className="close-modal "
+                onClick={() => setIspopup(!ispopup)}
+              >
+                &times;
+              </button>
+              <h1 className="text-center">
+                BMI Resalt: {Math.round(BMIResalt)} kg/m
+                <sup>2</sup>
+              </h1>
+              <p>Note a healthy BMI range: 18.5 kg/m<sup>2</sup> - 25kg/m <sup>2</sup></p>
+            </div>
+            <div
+              className="overlay "
+              onClick={() => setIspopup(!ispopup)}
+            ></div>
+          </>) : null
+      }
+
+      
       <div className="image">
         <img src={doctorImage} alt="" />
       </div>
