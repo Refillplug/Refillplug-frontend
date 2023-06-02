@@ -55,10 +55,10 @@ function SectionMedication() {
           <div className="slider">
          
             <div className="slider-01">
-                 <ul>
-              
-              
-              drug.filter((item) => item.name.toLowerCase().includes(query.toLowerCase())).map(data => ( <li key={data.id}>
+                 <ul>                           
+              drug.filter((item) => item.name.toLowerCase().includes(query.toLowerCase())).map(data => (
+
+  <li key={data.id}>
 
     <a href="#">{data.name.toUpperCase()} - {data.drug_form}</a>
 
