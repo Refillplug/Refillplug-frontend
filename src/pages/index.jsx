@@ -2,6 +2,7 @@ import React from "react";
 
 // components
 import $plan from "../components/plan";
+import $offers from "../components/offers";
 import $banner from "../components/banner";
 import $review from "../components/review";
 import $started from '../components/started';

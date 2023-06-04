@@ -12,7 +12,7 @@ function SectionMedication() {
   console.log(drug)
   useEffect(()=>{
     axios
-      .get("https://refillplug.up.railway.app/admin_view/list_medication/")
+      .get("https://refillplug.up.railway.app/api/list_subscription_medication/")
       .then((response) => {
         setDrug(response.data);
       })
@@ -55,10 +55,14 @@ function SectionMedication() {
           <div className="slider">
          
             <div className="slider-01">
-                 <ul>
+                 <ul>                           
               {
+
                 drug.filter((item)=> item.name.toLowerCase().includes(query.toLowerCase())).map(data=><li key={data.id}>{data.name }- { data.drug_form }</li>)
+
               }
+
+              
             </ul>
             </div>
    
