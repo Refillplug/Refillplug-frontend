@@ -9,8 +9,8 @@ function index() {
           We make your delivery <br /> fast and to Your <br /> Doorstep
         </h1>
         <ul style={{ listStyle: "initial", marginLeft: "2rem" }}>
-          <li>Personalized Treatment plans</li>
-          <li>repeat prescriptions sorted </li>
+          <li>Personalized medication plans</li>
+          <li>Repeat prescriptions sorted </li>
           <li>Save time and Effort</li>
         </ul>
       </div>
