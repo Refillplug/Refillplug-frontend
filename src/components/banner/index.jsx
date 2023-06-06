@@ -8,12 +8,11 @@ export default function () {
     return <section id="banner">
         <div className="txt">
             <h2>
-                Do you need a personalised <span>prescription plan</span>?
+                Do you need a personalised <span>medication plan</span>
             </h2>
-            <h3>
-                    Never run out of your medications
-            </h3>
+     
             <p>
+                Never run out of your medications
                 Enjoy personalised medication plans with automated refills, free deliveries and ongoing support from healthcare Specialists
             </p>
             <div className="btn">
