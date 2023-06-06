@@ -13,6 +13,8 @@ export default function () {
      
             <p>
                 Never run out of your medications
+            </p>
+            <p>
                 Enjoy personalised medication plans with automated refills, free deliveries and ongoing support from healthcare Specialists
             </p>
             <div className="btn">
