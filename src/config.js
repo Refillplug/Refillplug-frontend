@@ -92,7 +92,7 @@ export const loginConfig = {
 
 export const forgotPasswordConfig = {
     header: "Forgot Password",
-    subject: "Enter the email address you use to sign up to Refillplug. We'll send you a link to reset your password",
+    subject: "To reset your password, please enter your Refillplug email address below",
     inputs: [
         {
             name: 'email',
@@ -108,8 +108,8 @@ export const forgotPasswordConfig = {
 };
 
 export const ReActivateConfig = {
-    header: "Re Activate Account",
-    subject: "Enter the email address you use to sign up to Refillplug. We'll send you a link to activate your account",
+    header: "Activate or Reactivate Account",
+    subject: "To activate or reactivate your account, please enter your Refillplug email address below",
     inputs: [
         {
             type: "email",
