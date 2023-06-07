@@ -15,7 +15,7 @@ export const plan = [
 export const started = [
     { image: user, title: 'Sign Up and activate your account' },
     { image: report, title: 'Update your profile and Medical Report' },
-    { image: delivery, title: 'Make a one-time purchase or subscribe to a monthly plan and get all you medications delivered to your ddoorstep' },
+    { image: delivery, title: 'Make a one-time purchase or subscribe to a monthly plan and get all you medications delivered on time to your doorstep' },
 ]
 
 export const customer = [
