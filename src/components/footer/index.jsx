@@ -26,7 +26,8 @@ export default () => {
             <div className="flex">
                 <img src={logo2} alt="" />
                 <p>
-                    Refillplug ensure you never run out of you medication while on your budget.
+                    Refillplug ensure you never run out of you medications while on your budget.
+                    <br>
                     Medication management has never been better.
                 </p>
             </div>
