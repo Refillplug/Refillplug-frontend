@@ -22,13 +22,15 @@ function SectionMedication() {
   return (
     <section className="medication">
       <h1 style={{ fontSize: "2rem", marginBottom: "1rem" }}>
-        Subscription Medications
+       All Subscription Medications
       </h1>
+<center>
       <small>
           <p>
           Search for your medications
           </p>
        </small>
+</center>
       <div className="medication-cont">
         <div className="section-slider">
           <div
