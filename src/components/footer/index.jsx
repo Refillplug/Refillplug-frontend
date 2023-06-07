@@ -9,11 +9,11 @@ export default () => {
         <div className="top">
             <div className="flex">
                 <img src={phone} alt="" />
-                <span>+2348060230285</span>
+                <span>070REFILLPLUG</span>
             </div>
             <div className="flex">
                 <img src={mail} alt="" />
-                <span>mminuwaali@gmail.com</span>
+                <span>support@refillplug.com</span>
             </div>
             <div className="flex">
                 <span>Social Network</span>
