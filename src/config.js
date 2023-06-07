@@ -43,6 +43,18 @@ export const signupConfig = {
             name: 'phone_number',
             label: "Phone Number",
             placeholder: "Enter your phone no",
+            validate: (value) => {
+
+                const phoneNumberRegex = /^\d{11}$/; // Regular expression to match 11 digits
+
+                if (!phoneNumberRegex.test(value)) {
+
+                 return "Phone number must be 11 digits";
+
+        }
+
+        return null; // Return null if validation passes
+                  
         },
         {
             required: true,
