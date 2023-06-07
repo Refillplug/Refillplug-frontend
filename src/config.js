@@ -23,7 +23,7 @@ export const signupConfig = {
         },
         {
             required: true,
-            name: 'lastname',
+            name: 'last_name',
             title: "Last Name",
             label: 'last name',
             placeholder: "Enter Your Last Name",
