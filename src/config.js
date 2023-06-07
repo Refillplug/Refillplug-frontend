@@ -83,7 +83,7 @@ export const loginConfig = {
             title: "password",
             label: "password",
             placeholder: "Enter your password",
-            link: [{ to: "/password-reset", text: 'forgot password?' }],
+            link: { to: "/password-reset", text: 'forgot password?' },
         },
     ],
     links: [{ text: "New to Refillplug? *sign up*", to: "/register", }],
