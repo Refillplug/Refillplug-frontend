@@ -22,5 +22,5 @@ export default [
     { path: '/service', element: layouts.main(pages.service) },
     { path: '/register', element: layouts.auth(pages.signup) },
     { path: '/password-reset', element: layouts.auth(pages.forgotPassword) },
-    { path: '/password-reset-confirm', element: layouts.auth(pages.reActivateUser) },
+    { path: '/reactivate', element: layouts.auth(pages.reActivateUser) },
 ];
