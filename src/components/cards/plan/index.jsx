@@ -10,7 +10,7 @@ export default function ({ title, validility, description, price }) {
         <div className="info">
             <span className="month">{validility}</span>
             <span className="price">
-                N{price}
+               ₦{price}
             </span>
         </div>
     </div>
