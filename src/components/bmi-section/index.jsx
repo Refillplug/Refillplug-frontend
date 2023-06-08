@@ -37,7 +37,7 @@ const calcBMI = async() => {
       {
         weight: weight,
         height: height,
-        gender: "Male",
+        gender: gender,
       }
     );
     setIspopup(!ispopup); 
