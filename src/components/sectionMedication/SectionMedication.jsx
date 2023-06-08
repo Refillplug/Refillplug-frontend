@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./style.scss";
-
-import { Users } from "./users";
 import axios from "../../utils/axios";
 
 function SectionMedication() {
@@ -22,15 +20,13 @@ function SectionMedication() {
   return (
     <section className="medication">
       <h1 style={{ fontSize: "2rem", marginBottom: "1rem" }}>
-       All Subscription Medications
+        All Subscription Medications
       </h1>
-<center>
-      <small>
-          <p>
-          Search for your medications
-          </p>
-       </small>
-</center>
+      <center>
+        <small>
+          <p>Search for your medications</p>
+        </small>
+      </center>
       <div className="medication-cont">
         <div className="section-slider">
           <div
@@ -68,9 +64,8 @@ function SectionMedication() {
                   )
                   .map((data) => (
                     <li key={data.id}>
-                      <a href="">
-                        {console.log(data)}
-                      {data.name}-{data.drug_form}
+                      <a href="" className="text-[#4ba6ed]">
+                        {data.name}-{data.drug_form}
                       </a>
                     </li>
                   ))}
