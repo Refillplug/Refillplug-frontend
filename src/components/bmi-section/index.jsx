@@ -62,7 +62,7 @@ const calcBMI = async() => {
               &times;
             </button>
             <p>
-              <b>BMI:</b> {response.bmi}
+              <b>Your body mass index:</b> {response.bmi}
             </p>
             <p>
               <b>Classification:</b> {response.classification}
