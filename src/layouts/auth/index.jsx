@@ -16,7 +16,7 @@ export default (Element) => () => {
 
     // effects
     React.useEffect(() => {
-        if (!auth.load && 'username' in auth.user) nav('/', { replace: true });
+        if (!auth.load && 'email' in auth.user) nav('/', { replace: true });
     }, [auth.load, auth.user])
 
     return <section id="auth">

@@ -12,7 +12,7 @@ export { default as subscribe } from './assets/image/subscribe.svg';
 export const signupConfig = {
     header: "Sign Up",
     subHeader:
-        "Enter the email address you use to sign in to Pharmaco. We'll send you a link to reset it",
+        "Enter all details correctly",
     inputs: [
         {
             required: true,
@@ -23,17 +23,10 @@ export const signupConfig = {
         },
         {
             required: true,
-            name: 'lastname',
+            name: 'last_name',
             title: "Last Name",
             label: 'last name',
             placeholder: "Enter Your Last Name",
-        },
-        {
-            required: true,
-            name: 'username',
-            title: "Username",
-            label: 'username',
-            placeholder: "username",
         },
         {
             name: 'email',
@@ -49,7 +42,7 @@ export const signupConfig = {
             title: "phone",
             name: 'phone_number',
             label: "Phone Number",
-            placeholder: "Enter your phone no",
+            placeholder: "Enter your phone no",  
         },
         {
             required: true,
@@ -90,7 +83,7 @@ export const loginConfig = {
             title: "password",
             label: "password",
             placeholder: "Enter your password",
-            link: { to: '/', text: 'forgot password?' },
+            link: { to: "/password-reset", text: 'forgot password?' },
         },
     ],
     links: [{ text: "New to Refillplug? *sign up*", to: "/register", }],
@@ -99,7 +92,7 @@ export const loginConfig = {
 
 export const forgotPasswordConfig = {
     header: "Forgot Password",
-    subject: "Enter the email address you use to sign in to Refillplug. We'll send you a link to reset it",
+    subject: "To reset your password, please enter your Refillplug email address below",
     inputs: [
         {
             name: 'email',
@@ -115,8 +108,8 @@ export const forgotPasswordConfig = {
 };
 
 export const ReActivateConfig = {
-    header: "Re Activate Account",
-    subject: "Enter the email address you use to sign in to Refillplug. We'll send you a link to reset it",
+    header: "Activate or Reactivate Account",
+    subject: "To activate or reactivate your account, please enter your Refillplug email address below",
     inputs: [
         {
             type: "email",
@@ -126,14 +119,7 @@ export const ReActivateConfig = {
             title: "Enter email",
             placeholder: "Enter your email",
         },
-        {
-            required: true,
-            name: 'code',
-            label: "code",
-            type: "number",
-            title: "otp code",
-            placeholder: "Enter the otp code",
-        },
+        
     ],
     links: [{ to: "/login", text: "Back to *login*", }],
     buttons: [{ type: "submit", text: "Activate", }],
@@ -167,8 +153,8 @@ export const subscribeConfig = {
 };
 
 export const portfolio = [
-    { title: "Customer's Satisfaction", data: "95%" },
-    { title: "Online Customer", data: "500+" },
-    { title: "Saved on Medication", data: "20%" },
+    { title: "Customer's Satisfaction", data: "98%" },
+    { title: "Trust us", data: "500+" },
+    { title: "Saved on Medication", data: "50%" },
     { title: "Saved Monthly", data: "5Hrs" },
 ];

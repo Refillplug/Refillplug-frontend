@@ -9,11 +9,11 @@ export default () => {
         <div className="top">
             <div className="flex">
                 <img src={phone} alt="" />
-                <span>+2348060230285</span>
+                <span>070REFILLPLUG</span>
             </div>
             <div className="flex">
                 <img src={mail} alt="" />
-                <span>mminuwaali@gmail.com</span>
+                <span>support@refillplug.com</span>
             </div>
             <div className="flex">
                 <span>Social Network</span>
@@ -26,33 +26,34 @@ export default () => {
             <div className="flex">
                 <img src={logo2} alt="" />
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Animi quas officiis itaque sunt nobis
-                    laboriosam reprehenderit ratione
+                    Refillplug ensure you never run out of your medications while on your budget.
+                </p>
+                <p>
+                     Medication management has never been better.
                 </p>
             </div>
             <div className="flex">
                 <h3>company</h3>
                 <div className="links">
-                    <Link to="/">about</Link>
-                    <Link to="/">services</Link>
-                    <Link to="/">blog</Link>
+                    <Link to="/">Career</Link>
+                    <Link to="/">Services</Link>
+                    <Link to="/">Blog</Link>
                 </div>
             </div>
             <div className="flex">
                 <h3>plan</h3>
                 <div className="links">
-                    <Link to="/">basic</Link>
-                    <Link to="/">premium</Link>
-                    <Link to="/">executive</Link>
+                    <Link to="/">Basic</Link>
+                    <Link to="/">Premium</Link>
+                    <Link to="/">Executive</Link>
                 </div>
             </div>
             <div className="flex">
                 <h3>quick links</h3>
                 <div className="links">
-                    <Link to="/">contact us</Link>
-                    <Link to="/">about</Link>
-                    <Link to="/">delivery</Link>
+                    <Link to="/">Contact us</Link>
+                    <Link to="/">About</Link>
+                    <Link to="/">Delivery</Link>
                 </div>
             </div>
         </div>
