@@ -200,6 +200,7 @@ function BmiSection() {
             placeholder="In kg"
 
             id="mass"
+            required
 
           />
 
@@ -219,6 +220,7 @@ function BmiSection() {
             placeholder="In Inches"
 
             id="height"
+            required
 
           />
 
