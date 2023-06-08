@@ -212,6 +212,7 @@ function BmiSection() {
           <input
 
             type="number"
+            step="0.01"
 
             onChange={(e) => setHeight(Number(e.target.value))}
 
