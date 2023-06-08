@@ -22,11 +22,11 @@ function SectionMedication() {
       <h1 style={{ fontSize: "2rem", marginBottom: "1rem" }}>
         All Subscription Medications
       </h1>
-      <center>
+     
         <small>
           <p>Search for your medications</p>
         </small>
-      </center>
+     
       <div className="medication-cont">
         <div className="section-slider">
           <div
@@ -74,7 +74,7 @@ function SectionMedication() {
                 <span>
                   Can't find your medications here?{" "}
                   <a href="" className="text-[#4ba6ed]">
-                    Kindly visit the medication page
+                    Kindly visit the e-pharmacy store
                   </a>
                 </span>
                 <span className="self-end">Back to top</span>
