@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./style.scss";
+
+import { Users } from "./users";
 import axios from "../../utils/axios";
 
 function SectionMedication() {
@@ -7,7 +9,7 @@ function SectionMedication() {
   const [drug, setDrug] = useState([])
 
 
-  
+  console.log(drug)
   useEffect(()=>{
     axios
       .get("https://refillplug.up.railway.app/api/list_subscription_medication/")
@@ -20,13 +22,8 @@ function SectionMedication() {
   return (
     <section className="medication">
       <h1 style={{ fontSize: "2rem", marginBottom: "1rem" }}>
-        All Subscription Medications
+        Refillplug Medications
       </h1>
-      <center>
-        <small>
-          <p>Search for your medications</p>
-        </small>
-      </center>
       <div className="medication-cont">
         <div className="section-slider">
           <div
@@ -56,31 +53,19 @@ function SectionMedication() {
           </div>
 
           <div className="slider">
+         
             <div className="slider-01">
-              <ul>
-                {drug
-                  .filter((item) =>
-                    item.name.toLowerCase().includes(query.toLowerCase())
-                  )
-                  .map((data) => (
-                    <li key={data.id}>
-                      <a href="" className="text-[#4ba6ed]">
-                        {data.name}-{data.drug_form}
-                      </a>
-                    </li>
-                  ))}
-              </ul>
-              <p className="mt-5 flex justify-between">
-                <span>
-                  Can't find your medications here?{" "}
-                  <a href="" className="text-[#4ba6ed]">
-                    Kindly visit the medication page
-                  </a>
-                </span>
-                <span className="self-end">Back to top</span>
-              </p>
-            </div>
+                 <ul>                           
+              {
 
+                drug.filter((item)=> item.name.toLowerCase().includes(query.toLowerCase())).map(data=><li key={data.id}>{data.name }- { data.drug_form }</li>)
+
+              }
+
+              
+            </ul>
+            </div>
+   
             <div className="slider-02"></div>
           </div>
         </div>
