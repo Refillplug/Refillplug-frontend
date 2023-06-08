@@ -8,19 +8,15 @@ export default function () {
     return <section id="banner">
         <div className="txt">
             <h2>
-                Do you need a personalised <span>medication plan</span>
+                Need to talk to a <span>pharmacist</span> or get a drug prescription?
             </h2>
-     
             <p>
-                Never run out of your medications
-            </p>
-            <p>
-                Enjoy personalised medication plans with automated refills, free deliveries and ongoing support from healthcare Specialists
+                Enjoy personalised treatment plans with automated refills, free deliveries and ongoing support from our Care Specialists
             </p>
             <div className="btn">
 
-                <Link to='/'>buy now</Link>
-                <Link to='/'>view plans</Link>
+                <Link to='/'>get now</Link>
+                <Link to='/'>view plan</Link>
             </div>
         </div>
         <div className="img">

@@ -12,7 +12,7 @@
                 .slider{
                     overflow: auto;
                     align-items: center;
-                    padding-top: 2rem !important;
+                    padding-top: 5em !important;
                     justify-content: flex-start;
                     scroll-snap-type: x mandatory;
                 }
@@ -27,7 +27,7 @@
                             li{
                                 border-bottom: solid .1rem #0003;
                                 padding: .4rem;
-                                text-align: left;
+                                text-align: center;
                             }
                         }
                         

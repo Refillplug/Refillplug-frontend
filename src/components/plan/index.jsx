@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 export default function () {
     return <section id="plan" className='column-flex'>
         <div className="title">
-            <h2>Subscription plan</h2>
+            <h2>medication plan</h2>
         </div>
         <div className="content">
             {plan.map((items, key) => <$plan key={key} {...items} />)}
