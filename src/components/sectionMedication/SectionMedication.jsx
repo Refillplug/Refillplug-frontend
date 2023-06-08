@@ -9,7 +9,7 @@ function SectionMedication() {
   const [drug, setDrug] = useState([])
 
 
-  console.log(drug)
+  
   useEffect(()=>{
     axios
       .get("https://refillplug.up.railway.app/api/list_subscription_medication/")
@@ -60,19 +60,32 @@ function SectionMedication() {
           </div>
 
           <div className="slider">
-         
             <div className="slider-01">
-                 <ul>                           
-              {
-
-                drug.filter((item)=> item.name.toLowerCase().includes(query.toLowerCase())).map(data=><li key={data.id}>{data.name }- { data.drug_form }</li>)
-
-              }
-
-              
-            </ul>
+              <ul>
+                {drug
+                  .filter((item) =>
+                    item.name.toLowerCase().includes(query.toLowerCase())
+                  )
+                  .map((data) => (
+                    <li key={data.id}>
+                      <a href="">
+                        {console.log(data)}
+                      {data.name}-{data.drug_form}
+                      </a>
+                    </li>
+                  ))}
+              </ul>
+              <p className="mt-5 flex justify-between">
+                <span>
+                  Can't find your medications here?{" "}
+                  <a href="" className="text-[#4ba6ed]">
+                    Kindly visit the medication page
+                  </a>
+                </span>
+                <span className="self-end">Back to top</span>
+              </p>
             </div>
-   
+
             <div className="slider-02"></div>
           </div>
         </div>
