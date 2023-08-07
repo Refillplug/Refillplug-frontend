@@ -60,6 +60,13 @@ export const signupConfig = {
             title: "repeat-password",
             placeholder: "Confirm your password",
         },
+        {
+            required: false,
+            name: 'referral',
+            title: "referral",
+            label: 'referral',
+            placeholder: "Enter a referral code",
+        },
     ],
     links: [{ to: "/login", text: "Already on Refillplug? *Log in*", }],
     buttons: [{ type: "submit", text: "Sign up", }],
